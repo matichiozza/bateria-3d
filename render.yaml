@@ -6,3 +6,14 @@ services:
     buildCommand: npm install
     startCommand: npm start
     healthCheckPath: /api/health
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: bateria-db
+          property: connectionString
+
+databases:
+  - name: bateria-db
+    plan: free
+    databaseName: bateria
+    user: bateria

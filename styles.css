@@ -1,5 +1,6 @@
 :root {
   --bg0: #0a0c10;
+  --panel: #151a24;
   --rim: #c8cdd8;
   --chrome: #9aa3b5;
   --shell: #2a1510;
@@ -86,6 +87,98 @@ body {
   font-size: 0.75rem;
   color: #6d758a;
   margin: 1rem 0 0;
+}
+
+.cloud-panel {
+  background: var(--panel, #1a1624);
+  border: 1px solid #2c2638;
+  border-radius: 12px;
+  padding: 1rem 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.cloud-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.cloud-head h2 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.db-badge {
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.25rem 0.55rem;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.db-badge.cloud {
+  background: rgba(45, 159, 111, 0.2);
+  color: #5ddea8;
+}
+
+.db-badge.local {
+  background: rgba(91, 140, 255, 0.2);
+  color: #8fb4ff;
+}
+
+.db-badge.off {
+  background: rgba(255, 100, 100, 0.15);
+  color: #ff9a9a;
+}
+
+.cloud-total {
+  margin: 0 0 0.5rem;
+  font-size: 0.9rem;
+  color: #b8bfd0;
+}
+
+.cloud-sub {
+  margin: 0.75rem 0 0.35rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #8b93a8;
+}
+
+.cloud-by-drum,
+.cloud-recent {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.82rem;
+  color: #c5cbe0;
+}
+
+.cloud-by-drum li,
+.cloud-recent li {
+  margin: 0.2rem 0;
+}
+
+.cloud-by-drum .muted {
+  list-style: none;
+  margin-left: -1.1rem;
+  color: #6d758a;
+}
+
+.btn-ghost {
+  margin-top: 0.75rem;
+  background: transparent;
+  border: 1px solid #3d4558;
+  color: #aab2c8;
+  font-size: 0.8rem;
+}
+
+.btn-ghost:hover {
+  border-color: var(--accent);
+  color: #fff;
 }
 
 .kit-scene {

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Batería 3D</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="stage">
+    <header class="header">
+      <h1>Batería</h1>
+      <p>Tocá cada pieza · vista 3D</p>
+    </header>
+
+    <section class="toolbar">
+      <button type="button" id="btn-audio" class="btn">Activar audio</button>
+      <label class="slider">
+        <span>Volumen</span>
+        <input type="range" id="volume" min="0" max="1" step="0.01" value="0.8" />
+      </label>
+    </section>
+
+    <div class="kit-scene" id="kit">
+      <div class="kit-floor"></div>
+      <div class="kit-rig">
+        <button type="button" class="drum crash" data-drum="crash" aria-label="Platillo crash">
+          <span class="cymbal"></span>
+          <span class="label">Crash</span>
+        </button>
+        <button type="button" class="drum ride" data-drum="ride" aria-label="Ride">
+          <span class="cymbal"></span>
+          <span class="label">Ride</span>
+        </button>
+        <button type="button" class="drum hihat" data-drum="hihat" aria-label="Hi-hat">
+          <span class="hihat-top"></span>
+          <span class="hihat-bottom"></span>
+          <span class="label">Hi-Hat</span>
+        </button>
+        <button type="button" class="drum tom-high" data-drum="tomHigh" aria-label="Tom alto">
+          <span class="shell"></span>
+          <span class="head"></span>
+          <span class="label">Tom 1</span>
+        </button>
+        <button type="button" class="drum tom-mid" data-drum="tomMid" aria-label="Tom medio">
+          <span class="shell"></span>
+          <span class="head"></span>
+          <span class="label">Tom 2</span>
+        </button>
+        <button type="button" class="drum snare" data-drum="snare" aria-label="Caja">
+          <span class="shell"></span>
+          <span class="head"></span>
+          <span class="label">Caja</span>
+        </button>
+        <button type="button" class="drum kick" data-drum="kick" aria-label="Bombo">
+          <span class="shell"></span>
+          <span class="head"></span>
+          <span class="port"></span>
+          <span class="label">Bombo</span>
+        </button>
+        <button type="button" class="drum floor" data-drum="floor" aria-label="Tom de piso">
+          <span class="shell"></span>
+          <span class="head"></span>
+          <span class="legs"></span>
+          <span class="label">Piso</span>
+        </button>
+      </div>
+    </div>
+
+    <p class="hint">Atajos: Q crash · W ride · E hi-hat · A tom1 · S caja · D tom2 · F piso · Espacio bombo</p>
+  </div>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

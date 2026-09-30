@@ -20,10 +20,17 @@ npm start
 
 Abrí http://localhost:3000
 
-## Nube (Render)
+## Repo
 
-1. Subí este repo a GitHub.
-2. En [Render](https://render.com), **New Blueprint** y elegí `render.yaml` (web + Postgres gratis).
-3. Cuando termine el deploy, compartí la URL `.onrender.com` con tu amigo.
+https://github.com/matichiozza/bateria-3d
+
+## Nube (Render) — un clic
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/matichiozza/bateria-3d)
+
+1. Clic en el botón (o [este enlace](https://render.com/deploy?repo=https://github.com/matichiozza/bateria-3d)).
+2. Iniciá sesión en Render y conectá GitHub si te lo pide.
+3. Confirmá el Blueprint (`render.yaml` crea **web + PostgreSQL**).
+4. Esperá el deploy y usá la URL `*.onrender.com`.
 
 Opcional: en cualquier host Node, definí `DATABASE_URL` con una Postgres de Neon o Supabase.
